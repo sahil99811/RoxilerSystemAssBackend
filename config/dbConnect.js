@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-
-exports.dbConnect=()=>{
-    return mongoose.connect(process.env.MONGODB_URl);
-}
+exports.dbConnect= () => {
+    console.log(process.env.MONGODB_URL)
+   return mongoose.connect(process.env.MONGODB_URL);
+};
